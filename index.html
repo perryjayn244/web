@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decentralized Pay-Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <header>
+            <h1>Web3 Pay</h1>
+            <button id="connectBtn">Connect Wallet</button>
+        </header>
+
+        <section class="balance-card">
+            <p>Your Balance</p>
+            <h2 id="balance">0.00 ETH</h2>
+            <small id="walletAddress">Not Connected</small>
+        </section>
+
+        <section class="payment-form">
+            <h3>Collect Payment</h3>
+            <input type="text" id="recipient" placeholder="Recipient Address (0x...)">
+            <input type="number" id="amount" placeholder="Amount in ETH">
+            <button id="sendBtn">Send Payment</button>
+        </section>
+
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
